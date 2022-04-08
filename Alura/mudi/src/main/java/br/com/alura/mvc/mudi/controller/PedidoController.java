@@ -18,23 +18,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("pedido")
 public class PedidoController {
 
-  @Autowired
-  private PedidoRepository pedidoRepository;
+  @Autowired private PedidoRepository pedidoRepository;
 
-  @Autowired
-  private UserRepository userRepository;
+  @Autowired private UserRepository userRepository;
 
   @GetMapping("formulario")
-  public String formulario(RequisicaoNovoPedido requisicao){
-    //retorna a pagina html da pasta templates/pedido
+  public String formulario(RequisicaoNovoPedido requisicao) {
+    // retorna a pagina html da pasta templates/pedido
     return "pedido/formulario";
-
   }
 
   @PostMapping("novo")
   public String novo(@Valid RequisicaoNovoPedido requisicao, BindingResult result) {
 
-    if(result.hasErrors()) {
+    if (result.hasErrors()) {
       return "pedido/formulario";
     }
 
@@ -46,7 +43,5 @@ public class PedidoController {
     pedidoRepository.save(pedido);
 
     return "pedido/formulario";
-
   }
-
 }

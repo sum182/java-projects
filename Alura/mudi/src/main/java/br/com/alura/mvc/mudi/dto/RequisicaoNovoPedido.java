@@ -6,14 +6,11 @@ import javax.validation.constraints.NotBlank;
 
 public class RequisicaoNovoPedido {
 
-  @NotBlank
-  private String nomeProduto;
+  @NotBlank private String nomeProduto;
 
-  @NotBlank
-  private String urlProduto;
+  @NotBlank private String urlProduto;
 
-  @NotBlank
-  private String urlImagem;
+  @NotBlank private String urlImagem;
   private String descricao;
 
   public String getNomeProduto() {
@@ -48,7 +45,7 @@ public class RequisicaoNovoPedido {
     this.descricao = descricao;
   }
 
-  public Pedido toPedido(){
+  public Pedido toPedido() {
     Pedido pedido = new Pedido();
     pedido.setDescricao(descricao);
     pedido.setNomeProduto(nomeProduto);
