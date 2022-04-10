@@ -2,12 +2,15 @@ package br.com.alura.mvc.mudi.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Oferta {
@@ -17,10 +20,10 @@ public class Oferta {
   private Long id;
 
   private BigDecimal valor;
+
   private LocalDate dataDaEntrega;
+
   private String comentario;
-
-
 
   @ManyToOne(fetch = FetchType.LAZY)
   private Pedido pedido;
