@@ -25,6 +25,12 @@ public class Pedido {
   private String urlImagem;
   private String descricao;
 
+  @Enumerated(EnumType.STRING)
+  private StatusPedido status;
+
+  @ManyToOne(fetch = FetchType.LAZY)
+  private User user;
+
   public StatusPedido getStatus() {
     return status;
   }
@@ -32,12 +38,6 @@ public class Pedido {
   public void setStatus(StatusPedido status) {
     this.status = status;
   }
-
-  @Enumerated(EnumType.STRING)
-  private StatusPedido status;
-
-  @ManyToOne(fetch = FetchType.LAZY)
-  private User user;
 
   public String getNomeProduto() {
     return nomeProduto;
