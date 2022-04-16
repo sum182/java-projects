@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class Teste {
 
   public static void main(String[] args) {
-    ArrayList lista = new ArrayList();
+    //<> Generics
+    ArrayList<Conta> lista = new ArrayList<Conta>();
 
     Conta cc = new ContaCorrente(22,11);
     lista.add(cc);
@@ -23,6 +24,23 @@ public class Teste {
     lista.remove(0);
     System.out.println("Tamanho da lista = " + lista.size());
 
+    Conta cc3 = new ContaCorrente(33,311);
+    lista.add(cc3);
+
+    Conta cc4 = new ContaCorrente(33,322);
+    lista.add(cc4);
+
+    for(int i =0; i < lista.size(); i ++){
+      Object oRef = lista.get(i);
+      System.out.println(oRef);
+    }
+
+    System.out.println("");
+    System.out.println("");
+
+    for (Conta conta:lista){
+      System.out.println(conta);
+    }
 
   }
 
