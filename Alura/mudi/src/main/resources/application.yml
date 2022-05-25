@@ -1,0 +1,27 @@
+app:
+  name:Mudi Application
+
+
+spring:
+  application:
+    name: 'Mudi Application'
+
+  datasource:
+    password: cvh.wrx.pph.363
+    url: jdbc:mysql://localhost:3306/mudi
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+logging:
+  pattern:
+    console: "%white(%d{ISO8601}) %highlight(%-5level) %white(%X{username}:%X{req.remoteHost}) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable"
+    level: info
+  group:
+    tomcat: org.apache.catalina, org.apache.coyote, org.apache.tomcat
+    spring: org.springframework
