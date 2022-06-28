@@ -18,7 +18,7 @@ public class TesteString {
 		for(int i = 0; i < nome.length(); i++) {
 			System.out.println(nome.charAt(i));
 		}
-		
+
 //		String sub = nome.substring(1);
 //		System.out.println(sub);
 		
