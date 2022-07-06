@@ -239,3 +239,16 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/maven
 /Alura/forum/.mvn/wrapper/*.jar
 /Alura/java-util-lambdas/fontes - alura
+/Alura/loja-mavem/.idea/.gitignore
+/Alura/loja-mavem/.idea/compiler.xml
+/Alura/loja-mavem/.idea/jarRepositories.xml
+/Alura/loja-mavem/.idea/misc.xml
+/Alura/loja-mavem/.idea/vcs.xml
+/Alura/.idea/misc.xml
+/Alura/.idea/vcs.xml
+/Alura/download - fontes projetos/Spring Boot API REST/.mvn/wrapper/maven-wrapper.jar
+/Alura/forum/.mvn/wrapper/maven-wrapper.jar
+/Alura/java-util-lambdas/bytebank-herdado-conta/src/.idea/aws.xml
+/Alura/java-util-lambdas/bytebank-herdado-conta/src/.idea/sonarlint/issuestore/b/8/b890537de757991bd3fdfc3cbbeede3a2f9879b7
+/Alura/download - fontes projetos/Spring Boot API REST/.mvn/wrapper/maven-wrapper.jar
+/Alura/forum/.mvn/wrapper/maven-wrapper.jar
