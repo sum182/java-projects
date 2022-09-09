@@ -252,3 +252,4 @@ buildNumber.properties
 /Alura/java-util-lambdas/bytebank-herdado-conta/src/.idea/sonarlint/issuestore/b/8/b890537de757991bd3fdfc3cbbeede3a2f9879b7
 /Alura/download - fontes projetos/Spring Boot API REST/.mvn/wrapper/maven-wrapper.jar
 /Alura/forum/.mvn/wrapper/maven-wrapper.jar
+/Alura/forum/.mvn/wrapper/*.jar
