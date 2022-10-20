@@ -253,3 +253,5 @@ buildNumber.properties
 /Alura/download - fontes projetos/Spring Boot API REST/.mvn/wrapper/maven-wrapper.jar
 /Alura/forum/.mvn/wrapper/maven-wrapper.jar
 /Alura/forum/.mvn/wrapper/*.jar
+/Alura/download - fontes projetos/Spring Boot API REST/.mvn/wrapper/*.jar
+*.jar
