@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Teste {
 
@@ -15,10 +16,19 @@ public class Teste {
       System.out.println(cliente.getSenha());
     }
 
-    //System.out.println();
-    //System.out.println("utilizando o foreach");
-
+    System.out.println("Autenticando:");
     c1.autenticaSenha("123");
+
+
+    System.out.println();
+    System.out.println("utilizando o foreach - metodo 1");
+    Consumer<Cliente> consumer = (Cliente c) -> {System.out.println(c.getNome());};
+    clientes.forEach(consumer);
+
+    System.out.println();
+    System.out.println("utilizando o foreach - metodo 2");
+    clientes.forEach(c-> System.out.println(c.getNome()));
+
 
 
 

@@ -28,6 +28,7 @@ import java.util.Optional;
 class AnimeServiceTest {
     @InjectMocks
     private AnimeService animeService;
+
     @Mock
     private AnimeRepository animeRepositoryMock;
 
