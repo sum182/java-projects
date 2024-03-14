@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/10-api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/10-api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-book-service/book-service.iml" filepath="$PROJECT_DIR$/10-book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-cambio-service/cambio-service.iml" filepath="$PROJECT_DIR$/10-cambio-service/cambio-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-erudio-config-server/erudio-config-server.iml" filepath="$PROJECT_DIR$/10-erudio-config-server/erudio-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-erudio.iml" filepath="$PROJECT_DIR$/.idea/microservices-erudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-naming-server/naming-server.iml" filepath="$PROJECT_DIR$/10-naming-server/naming-server.iml" />
+    </modules>
+  </component>
+</project>
